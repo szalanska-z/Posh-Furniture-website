@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@200;300;400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+body {
+  margin-top: 96px;
+}
+nav {
+  border-bottom: 1px solid black;
+}
+.logo {
+  width: 70px;
+  height: 70px;
+}
+
+.heading {
+  text-align: center;
+  padding: 20px 40px;
+  letter-spacing: 1px;
+}
+
+.jumbotron-fluid {
+  background-color: #ebcac1;
+}
+
+.img_gallery {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  border: 20px solid #f0f2fb;
+  transition: 0.3s;
+}
+
+h3 {
+  color: #dd545b;
+  padding: 20px 0;
+}
+
+.btn_gallery {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  transition: 0.3s;
+}
+
+.btn_gallery:hover {
+  font-size: 18px;
+  background-color: transparent;
+  color: #dd545b;
+}
+
+.btn_contact {
+  background-color: black;
+  color: white;
+  padding: 10px 10px;
+  letter-spacing: 1px;
+  transition: 0.3s;
+  /* font-size: 18px; */
+}
+
+.btn_contact:hover {
+  background-color: #dd545b;
+  font-size: 18px;
+  color: black;
+}
+/* #footer {
+	/* background-color: #212c3f; */
+/* background-color: #2B3C68; */
+/* height: 100px; */
+/* } */
+
+/* #footer p {
+  color: white;
+  font-size: 12px;
+} */
+
+.fab {
+  color: white;
+  font-size: 30px;
+  padding: 0 10px;
+}
+
+/* #contact {
+  background-color: #d67f83;
+  background-color: #8f9b8f;
+} */
+
+.logo_footer {
+  width: 100px;
+  height: 100px;
+}
+
+@media all and (min-width: 668px) {
+  .img_gallery:hover {
+    width: 560px;
+    height: 560px;
+  }
+}
+
+@media all and (min-width: 577px) {
+  .img_gallery {
+    width: 440px;
+    height: 440px;
+  }
+  .img_gallery:hover {
+    width: 500px;
+    height: 500px;
+  }
+}
+
+@media all and (min-width: 415px) and (max-width: 576px) {
+  .img_gallery {
+    width: 360px;
+    height: 360px;
+  }
+}
+
+@media all and (max-width: 414px) {
+  .img_gallery {
+    width: 300px;
+    height: 300px;
+  }
+}
