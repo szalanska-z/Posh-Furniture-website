@@ -6,6 +6,9 @@
   box-sizing: border-box;
   font-family: "Spartan", sans-serif;
 }
+html {
+  font-size: 16px;
+}
 body {
   margin-top: 96px;
 }
@@ -22,7 +25,21 @@ nav {
   padding: 20px 40px;
   letter-spacing: 1px;
 }
+.about_bg {
+  background-image: url(img/about-bg2.jpg);
+  background-position: 50% 70%;
+}
 
+.card-title {
+  border-bottom: 1px solid #f0f2fb;
+  padding-bottom: 5px;
+  font-size: 24px;
+}
+
+.card-body {
+  font-size: 16px;
+  padding: 20px;
+}
 .jumbotron-fluid {
   background-color: #ebcac1;
 }
@@ -93,11 +110,21 @@ h3 {
   width: 100px;
   height: 100px;
 }
+.card {
+  overflow: hidden;
+}
+.card-body {
+  background-color: #2b3c68;
+  color: white;
+  text-align: center;
+  height: 180px;
+}
 
 @media all and (min-width: 668px) {
   .img_gallery:hover {
-    width: 560px;
-    height: 560px;
+    /* width: 560px;
+    height: 560px; */
+    transform: scale(1.4);
   }
 }
 
@@ -107,8 +134,9 @@ h3 {
     height: 440px;
   }
   .img_gallery:hover {
-    width: 500px;
-    height: 500px;
+    /* width: 500px;
+    height: 500px; */
+    transform: scale(1.2);
   }
 }
 

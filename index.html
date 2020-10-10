@@ -47,7 +47,7 @@
             <a class="nav-link" href="#gallery">Realizacje</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Oferta</a>
+            <a class="nav-link" href="#offer">Oferta</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact">Kontakt</a>
@@ -63,16 +63,18 @@
         </p>
       </div>
     </div>
-    <section id="about" class="my-4">
-      <div class="container">
+    <section id="about" class="mt-0 mb-4">
+      <div class="about_bg container-fluid py-5">
+        <div class="container py-5">
         <div class="row">
-          <div class="col">
-            <h1 class="heading">O nas</h1>
-            <p class="text-center">
+          <div class="col text-white">
+            <h1 class="heading text-white">O nas</h1>
+            <p class="text-center font-italic">
               Firma Posh Furniture to solidny, sprawdzony i pewny wykonawca mebli na wymiar. Realizujemy meble na miarę Państwa potrzeb i oczekiwań. Swoje usługi oferujemy mieszkańcom Rzeszowa i okolic. Większe realizacje wykonujemy również na terenie całego kraju. Wykonujemy meble zarówno do mieszkań i domów, jak i dla firm i instytucji. Zawsze kreatywnie, solidnie, rzetelnie i zgodnie z ustaleniami. 
             </p>
           </div>
         </div>
+      </div>
       </div>
     </section>
     <section id="gallery" class="my-5">
@@ -93,7 +95,7 @@
               nesciunt repudiandae, vero omnis ut provident corrupti deleniti
               rem voluptatem officia, nulla debitis distinctio delectus.
             </p>
-            <button class="btn border-dark btn_gallery">Zobacz więcej</button>
+            <button class="btn border-dark btn_gallery" data-toggle="modal" data-target="#modal-drawers">Zobacz więcej</button>
           </div>
         </div>
         <div class="row d-flex justify-content-center align-items-center mb-5">
@@ -111,7 +113,7 @@
               explicabo! Aut itaque sunt praesentium, aperiam temporibus nisi
               eveniet aspernatur natus animi, eum minus.
             </p>
-            <button class="btn border-dark btn_gallery">Zobacz więcej</button>
+            <button class="btn border-dark btn_gallery" data-toggle="modal" data-target="#modal-beds" >Zobacz więcej</button>
           </div>
         </div>
         <div class="row d-flex justify-content-center align-items-center mb-5">
@@ -129,8 +131,51 @@
               nesciunt repudiandae, vero omnis ut provident corrupti deleniti
               rem voluptatem officia, nulla debitis distinctio delectus.
             </p>
-            <button class="btn border-dark btn_gallery">Zobacz więcej</button>
+            <button class="btn border-dark btn_gallery" data-toggle="modal" data-target="#modal-chairs">Zobacz więcej</button>
           </div>
+        </div>
+      </div>
+    </section>
+    <section id="offer">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1 class="heading">Oferta</h1>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+          <div class="col mb-4">
+            <div class="card">
+              <img class="card-img-top" src="img/office.jpg" alt="">
+              <div class="card-body">
+                <h4 class="card-title">Meble biurowe</h4>
+                <p>Funkcjonalne meble biurowe i gabinetowe.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4"> 
+            <div class="card">
+             <img class="card-img-top" src="img/kuchnia.jpg" alt="">
+             <div class="card-body">
+               <h4 class="card-title">Meble kuchenne</h4>
+               <p>Meble do kuchni na wymiar oraz zabudowy kuchenne dopasowane do sprzętu AGD.</p>
+             </div>
+           </div>
+          </div>
+          <div class="col mb-4" > <div class="card">
+             <img class="card-img-top" src="img/szafa.jpg" alt="">
+             <div class="card-body">
+               <h4 class="card-title">Szafy i komody</h4>
+               <p>Szafy, szafki nocne, komody, półki.</p>
+             </div>
+           </div></div>
+          <div class="col mb-4"> <div class="card">
+             <img class="card-img-top" src="img/lozko dzieciece2.jpg" alt="">
+             <div class="card-body">
+               <h4 class="card-title">Łóżka</h4>
+               <p >Łóżka do sypialni, łóżka dziecięce.</p>
+             </div>
+           </div></div>
         </div>
       </div>
     </section>
@@ -195,6 +240,87 @@
       </div>
     </div>
 
+    <!-- Modals -->
+    <div class="modal" id="modal-drawers" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Komody</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="row row-cols-1 row-cols-lg-2 p-4">
+            <div class="col p-3">
+          <img class="img-fluid"src="img/komoda1.jpg" alt="">
+        </div>
+        <div class="col p-3">
+          <img class="img-fluid" src="img/komoda2.jpg" alt="">
+        </div>
+        <div class="col p-3">
+          <img class="img-fluid" src="img/komoda3.jpg" alt="">
+        </div>
+        <div class="col p-3">
+          <img class="img-fluid" src="img/komoda4.jpg" alt="">
+        </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-beds" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Łóżka</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="row row-cols-1 row-cols-lg-2 p-4">
+            <div class="col">
+          <img class="img-fluid p-3"src="img/lozko1.jpg" alt="">
+        </div>
+        <div class="col">
+          <img class="img-fluid p-3" src="img/lozko2.jpg" alt="">
+        </div>
+        <div class="col">
+          <img class="img-fluid p-3" src="img/lozko4.jpg" alt="">
+        </div>
+        <div class="col">
+          <img class="img-fluid p-3" src="img/lozko5.jpg" alt="">
+        </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-chairs" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Krzesła</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="row row-cols-1 row-cols-lg-2 p-4">
+            <div class="col">
+          <img class="img-fluid p-3"src="img/krzeslo1.jpg" alt="">
+        </div>
+        <div class="col">
+          <img class="img-fluid p-3" src="img/krzesło2.jpg" alt="">
+        </div>
+        <div class="col">
+          <img class="img-fluid p-3" src="img/krzeslo3.jpg" alt="">
+        </div>
+        <div class="col">
+          <img class="img-fluid p-3" src="img/krzeslo4.jpg" alt="">
+        </div>
+        </div>
+        </div>
+      </div>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
